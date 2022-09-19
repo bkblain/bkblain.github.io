@@ -14,6 +14,13 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"
             integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+            rel="stylesheet">
+
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap-grid.min.css" integrity="sha512-95rjxgceX8l8NTRpxqRWwYWAl5jhwmGHGtmwgaA5++tITaixvU/RipgbZIBwp/912s9AE5AZGs9EM3gSBx6OuQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
         <!-- https://coolors.co/8ecae6-219ebc-023047-ffb703-fb8500
             
@@ -26,15 +33,30 @@
         <style type="text/css">
             body {
                 color: #333;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            h1 {
+                color: #023047;
+                font-weight: bold;
             }
 
             .hero {
-                background-image: url('https://lh3.googleusercontent.com/pw/AL9nZEVnLimFwZvYB7I5PWGYo_wFlT7SDAzTMmYQOJPRluhVog5wYcVLaZhSl7TdIX4snFEs0pBHmKNdyrGshRTahynb7uFM4EBfoCe9fbqv_wYOSPWN_OK8HbAXMYdTC6P7jYxzqmUORe1gRTV4d0KFjI78=w1686-h948-no?authuser=0');
+                /* background-image: url('https://lh3.googleusercontent.com/pw/AL9nZEVnLimFwZvYB7I5PWGYo_wFlT7SDAzTMmYQOJPRluhVog5wYcVLaZhSl7TdIX4snFEs0pBHmKNdyrGshRTahynb7uFM4EBfoCe9fbqv_wYOSPWN_OK8HbAXMYdTC6P7jYxzqmUORe1gRTV4d0KFjI78=w1686-h948-no?authuser=0'); */
+                /* background-image: url('https://lh3.googleusercontent.com/pw/AL9nZEXuIFgTd5gM6u5FJK_2LGRHW4n95F0b5YAf_4GH8VqJArL5-NvSjc9WSsR-44R70OBOs7Mf-PvHifAcLqO-BYAkaVUvGbba7oP7eXSpc6wTHD4h6frZG0ohAkctBaOeGrWaJv8ZxTcuVl8lcZoloQrT=w1331-h887-no?authuser=0'); */
+                background-image: url('https://lh3.googleusercontent.com/pw/AL9nZEXscSnL4ZdSfJpc1SL3ym9thWApZO6z0iuusWcp09SmnLMzaOK-s9MGiumesPoQWxgc7MSXrH1slewzlOL2P7udhquwjxdDytTS2R-eZ0ZhEyeAWiDqhRgRa3LoMF3t3VY3xMdi4Jx6oifvNJgvQYu0=w1422-h948-no?authuser=0');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-color: #FFB703;
 
+                border-bottom: .2em solid #023047;
                 /* height: 100vh; */
+            }
+
+            .title {
+                color: #023047;
+                font-size: 3em;
+                font-weight: bold;
             }
 
             .datetime {
@@ -81,11 +103,15 @@
                 border-radius: 50%;
             }
 
+            .triton .alert-danger {
+                font-size: 1.5em;
+            }
+
             .btn-rsvp {
                 color: #333;
                 background-color: #FB8500;
                 border-color: #333;
-                padding: 1em 3em;
+                padding: .5em 1em;
             }
 
             .btn-rsvp:hover {
@@ -107,8 +133,27 @@
             }
 
 
-            @media only screen and (max-width: 1300px) {
-  
+            @media only screen and (max-width: 600px) {
+                .hero {
+                    padding: 0;
+                }
+
+                .hero .p-5 {
+                    padding: 0 2em !important;
+                }
+
+                .hero .py-5 {
+                    padding: 1em 0 !important;
+                }
+
+                .title {
+                    font-size: 2em;
+                }
+
+                /* .btn-rsvp {
+                    padding: .5em 1em;
+                    margin-top: -2em;
+                } */
             }
 
         </style>
@@ -124,12 +169,13 @@
                 style="position: absolute; opacity: 100;" /> -->
             <div class="container p-5">
                 <div class="row py-5">
-                    <div class="col-6">
-                        <h1>Brian's 40th Birthday!</h1>
+                    <div class="col-5"></div>
+                    <div class="col text-end title">
+                        Brian's 40th Birthday!
                     </div>
                 </div>
-                <div class="row py-5">
-                    <div class="col">
+                <div class="row py-3">
+                    <div class="text-end">
                         <button type="button" class="btn btn-rsvp">RSVP Now!</button>
                     </div>
                 </div>
@@ -165,35 +211,48 @@
                     <div class="col-sm-3 col-md-2 triton-logo text-center py-5">
                         <img
                             src="https://i2.wp.com/triton-charters.com/wp-content/uploads/2019/11/favicon.png"
-                            alt="EPPIG Brewing" width="100"
+                            alt="Triton Charters" width="100"
                             style="background-color:
                             white;" />
                     </div>
-                    <div class="col py-5">
+                    <div class="col py-5" style="max-width: 50em;">
                         <div class="pb-4">
-                            <h2>Yacht Party!</h2>
+                            <h1>Yacht Party!</h1>
                             <p class="datetime">10:30am until 1:00pm</p>
-                            <p>Taking a trip around the bay. There is a cash bar
-                                for drinks. Pizza and cake for lunch.
+                            <p>We will be taking a 2 hour private charter around
+                                the bay on a catamaran. A cash bar
+                                is available for drinks. Pizza and cake will be
+                                provided for lunch. Please, no
+                                gifts!
                             </p>
                             <img
                                 src="https://i.ytimg.com/vi/7_2s4QeiXq0/maxresdefault.jpg"
-                                alt="Triton Charters" width="100" />
-                            <img
-                                src="https://lh3.googleusercontent.com/p/AF1QipOr23aYk25L7OWe-KP9OyplHbqr-KGadm-U8NsO=w1080-h608-p-no-v0"
-                                alt="triton" width="100" />
+                                alt="Triton Charters" width="100%"
+                                style="border-radius: .3em; margin: 1em 0;"
+                                />
+                            <p>
+                                <strong>PARKING:</strong> There is no on-site
+                                parking. We’re a short
+                                walk down the promenade from the public parking
+                                lot
+                                located at the corner of Shelter Island Drive &
+                                Anchorage Ln. (in front of the Brigantine
+                                Restaurant). Part of the lot is metered (up to 3
+                                hours- quarters only), and the back portion of
+                                the
+                                lot is free. There is also surrounding street
+                                parking.
+                            </p>
+                            <h2><strong>IMPORTANT!</strong></h2>
+                            <p>
+                                RSVP must be made 72 hours before boat launch.
+                                The charter company requires your full name and
+                                you must sign the waiver before boarding.
+                            </p>
                         </div>
 
-                        <div class="alert alert-info" role="alert">
-                            <strong>PARKING:</strong> There is no on-site
-                            parking. We’re a short
-                            walk down the promenade from the public parking lot
-                            located at the corner of Shelter Island Drive &
-                            Anchorage Ln. (in front of the Brigantine
-                            Restaurant). Part of the lot is metered (up to 3
-                            hours- quarters only), and the back portion of the
-                            lot is free. There is also surrounding street
-                            parking.
+                        <div class="alert alert-danger p-5 text-center">
+                            <strong><a href>Sign this waiver!</a></strong>
                         </div>
                     </div>
                 </div>
@@ -209,11 +268,13 @@
                             src="https://images.sirved.com/ChIJa8snrqOr3oAR0SjHhW02xOQ/XNxmh36Dox.png"
                             alt="EPPIG Brewing" width="100" />
                     </div>
-                    <div class="col py-5">
-                        <h2>After Party!</h2>
-                        <p class="datetime">1:00pm-?</p>
+                    <div class="col py-5" style="max-width: 50em;">
+                        <h1>After Party!</h1>
+                        <p class="datetime">1:00pm until ?</p>
                         <p>After the boat ride you're welcome to join us over at
-                            Eppig Brewing for a few beers. The brewery is a
+                            <a
+                                href="http://www.eppigbrewing.com/waterfront-biergarten">Eppig
+                                Brewing</a> for a few beers. The brewery is a
                             short walk from the pier.</p>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.624190381603!2d-117.22976728437078!3d32.72261258098844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80deaba3ae27cb6b%3A0xe4c4366d85c728d1!2sEppig%20Brewing%20Waterfront%20Biergarten!5e0!3m2!1sen!2sus!4v1663455671552!5m2!1sen!2sus"
@@ -231,14 +292,19 @@
 
         <script type="text/javascript">
             const setHeight = () => {
+                // const minSize = min ? min : 600;
+
                 const hero = document.getElementById('hero');
-                if(hero != null && hero.offsetWidth > 600) {
-                    const height = Math.round(hero.offsetWidth * (158/281));
+                if(hero != null && hero.offsetWidth > 400) {
+                    const height = Math.round(hero.offsetWidth * (2/3));
                     hero.style.height = height + 'px';
                 }
             }
             window.addEventListener('resize', setHeight);
-            setHeight();
+
+            window.addEventListener('load', (event) => {
+                setHeight();
+            });
         </script>
     </body>
 </html>
