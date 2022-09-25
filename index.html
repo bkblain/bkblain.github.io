@@ -59,6 +59,12 @@
                 font-weight: bold;
             }
 
+            .subtitle {
+                color: #023047;
+                font-weight: bold;
+                margin: -.6em 0;
+            }
+
             .datetime {
                 font-family: 'Courier New', Courier, monospace;
                 font-size: 1.3em;
@@ -147,13 +153,31 @@
                 }
 
                 .title {
-                    font-size: 2em;
+                    font-size: 2em !important;
                 }
 
                 /* .btn-rsvp {
                     padding: .5em 1em;
                     margin-top: -2em;
                 } */
+            }
+
+            @media only screen and (max-width: 1000px) {
+                .hero {
+                    padding: 0;
+                }
+
+                .hero .p-5 {
+                    padding: 0 2em !important;
+                }
+
+                .hero .py-5 {
+                    padding: 1em 0 !important;
+                }
+
+                .title {
+                    font-size: 2.5em;
+                }
             }
 
         </style>
@@ -171,12 +195,12 @@
                 <div class="row py-5">
                     <div class="col-5"></div>
                     <div class="col text-end title">
-                        Brian's 40th Birthday!
-                    </div>
-                </div>
-                <div class="row py-3">
-                    <div class="text-end">
-                        <button type="button" class="btn btn-rsvp">RSVP Now!</button>
+                        <div class="title">
+                            40th
+                        </div>
+                        <div class="subtitle">
+                            Birthday!
+                        </div>
                     </div>
                 </div>
             </div>
@@ -189,7 +213,7 @@
                 </div> -->
                 <div class="row">
                     <div class="col">
-                        10:30am - 1:00pm <br />
+                        10:15am - 1:00pm <br />
                         November 12, 2022
                     </div>
                 </div>
@@ -218,7 +242,7 @@
                     <div class="col py-5" style="max-width: 50em;">
                         <div class="pb-4">
                             <h1>Yacht Party!</h1>
-                            <p class="datetime">10:30am until 1:00pm</p>
+                            <p class="datetime">10:15am until 1:00pm</p>
                             <p>We will be taking a 2 hour private charter around
                                 the bay on a catamaran. A cash bar
                                 is available for drinks. Pizza and cake will be
@@ -232,22 +256,21 @@
                                 />
                             <p>
                                 <strong>PARKING:</strong> There is no on-site
-                                parking. We’re a short
-                                walk down the promenade from the public parking
-                                lot
-                                located at the corner of Shelter Island Drive &
-                                Anchorage Ln. (in front of the Brigantine
-                                Restaurant). Part of the lot is metered (up to 3
-                                hours- quarters only), and the back portion of
-                                the
-                                lot is free. There is also surrounding street
-                                parking.
+                                parking. We’re a short walk down the promenade
+                                from the public parking lot located at the
+                                corner of Shelter Island Drive & Anchorage Ln.
+                                (in front of the Brigantine Restaurant). Part of
+                                the lot is metered (up to 3 hours- quarters
+                                only), and the back portion of the lot is free.
+                                There is also surrounding street parking.
                             </p>
                             <h2><strong>IMPORTANT!</strong></h2>
                             <p>
-                                RSVP must be made 72 hours before boat launch.
-                                The charter company requires your full name and
-                                you must sign the waiver before boarding.
+                                RSVP must be made by November 9th (72 hours)
+                                before boat launch. The charter company requires
+                                your full name that is on your driver's license
+                                or other form of identification and to sign the
+                                waiver before boarding.
                             </p>
                         </div>
 
