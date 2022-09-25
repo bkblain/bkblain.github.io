@@ -34,6 +34,7 @@
             body {
                 color: #333;
                 font-family: 'Open Sans', sans-serif;
+                font-size: 1.5em;
             }
 
             h1 {
@@ -42,15 +43,13 @@
             }
 
             .hero {
-                /* background-image: url('https://lh3.googleusercontent.com/pw/AL9nZEVnLimFwZvYB7I5PWGYo_wFlT7SDAzTMmYQOJPRluhVog5wYcVLaZhSl7TdIX4snFEs0pBHmKNdyrGshRTahynb7uFM4EBfoCe9fbqv_wYOSPWN_OK8HbAXMYdTC6P7jYxzqmUORe1gRTV4d0KFjI78=w1686-h948-no?authuser=0'); */
-                /* background-image: url('https://lh3.googleusercontent.com/pw/AL9nZEXuIFgTd5gM6u5FJK_2LGRHW4n95F0b5YAf_4GH8VqJArL5-NvSjc9WSsR-44R70OBOs7Mf-PvHifAcLqO-BYAkaVUvGbba7oP7eXSpc6wTHD4h6frZG0ohAkctBaOeGrWaJv8ZxTcuVl8lcZoloQrT=w1331-h887-no?authuser=0'); */
                 background-image: url('https://lh3.googleusercontent.com/pw/AL9nZEXscSnL4ZdSfJpc1SL3ym9thWApZO6z0iuusWcp09SmnLMzaOK-s9MGiumesPoQWxgc7MSXrH1slewzlOL2P7udhquwjxdDytTS2R-eZ0ZhEyeAWiDqhRgRa3LoMF3t3VY3xMdi4Jx6oifvNJgvQYu0=w1422-h948-no?authuser=0');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-color: #FFB703;
+                background-position: bottom;
 
                 border-bottom: .2em solid #023047;
-                /* height: 100vh; */
             }
 
             .title {
@@ -84,8 +83,6 @@
             }
 
             .eppig-logo {
-                /* border-radius: .5em; */
-                /* border-right: 1em solid #219EBC; */
                 background: linear-gradient(#219EBC, #219EBC) no-repeat center/1em 100%;
             }
 
@@ -93,15 +90,7 @@
                 border-radius: 50%;
             }
 
-            .triton {
-                /* border-top: 1em solid #219EBC; */
-            }
-
             .triton-logo {
-                /* border-radius: .5em;
-                border-right: 1em solid #219EBC; */
-                
-                
                 background: linear-gradient(#219EBC, #219EBC) no-repeat center/1em 100%;
             }
 
@@ -153,13 +142,8 @@
                 }
 
                 .title {
-                    font-size: 2em !important;
+                    font-size: 1.5em !important;
                 }
-
-                /* .btn-rsvp {
-                    padding: .5em 1em;
-                    margin-top: -2em;
-                } */
             }
 
             @media only screen and (max-width: 1000px) {
@@ -176,10 +160,15 @@
                 }
 
                 .title {
-                    font-size: 2.5em;
+                    font-size: 2em !important;
                 }
             }
 
+            @media only screen and (max-width: 1200px) {
+                .title {
+                    font-size: 2.5em;
+                }
+            }
         </style>
     </head>
     <body>
@@ -187,10 +176,6 @@
 
 
         <div id="hero" class="container-fluid hero pb-5">
-            <!-- <img
-                src="https://lh3.googleusercontent.com/pw/AL9nZEVnLimFwZvYB7I5PWGYo_wFlT7SDAzTMmYQOJPRluhVog5wYcVLaZhSl7TdIX4snFEs0pBHmKNdyrGshRTahynb7uFM4EBfoCe9fbqv_wYOSPWN_OK8HbAXMYdTC6P7jYxzqmUORe1gRTV4d0KFjI78=w1686-h948-no?authuser=0"
-                alt="EPPIG Brewing" width="100%"
-                style="position: absolute; opacity: 100;" /> -->
             <div class="container p-5">
                 <div class="row py-5">
                     <div class="col-5"></div>
