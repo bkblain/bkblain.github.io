@@ -25,6 +25,10 @@
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1/assets/css/atcb.min.css"
             />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,12 +48,28 @@
                 font-size: 2em;
             }
 
+            a:link {
+                color: #023047;
+            }
+
+            a:visited {
+                color: #023047;
+            }
+
+            a:hover {
+                color: #FB8500;
+            }
+
+            a:active {
+                color: #FB8500;
+            }
+
             h1, h2 {
                 color: #023047;
                 font-weight: bold;
                 padding-top: 1em;
             }
-
+            
             h2 {
                 text-transform: uppercase;
             }
@@ -105,6 +125,10 @@
                 border-radius: 50%;
             }
 
+            .eppig .content {
+                padding-bottom: 4em;
+            }
+
             .triton-logo {
                 background: linear-gradient(#219EBC, #219EBC) no-repeat center/1em 100%;
                 padding: 2em 0;
@@ -121,6 +145,22 @@
             .content {
                 max-width: 35em;
                 padding: 1em 1em 1em 0;
+            }
+
+            .content img {
+                border-radius: .3em;
+                margin: 1em 0;
+                width: 100%;
+            }
+
+            .atcb-text {
+                font-size: 1.5em !important;
+                font-weight: normal;
+            }
+
+            .fa {
+                color: #023047;
+                padding-right: .5em;
             }
         </style>
     </head>
@@ -206,14 +246,13 @@
                         for lunch. Please, no gifts!
                     </p>
                     <p>
+                        <i class="fa fa-solid fa-martini-glass-citrus"></i>
                         <a href="./drinkmenu.pdf">Drink Menu</a>
                     </p>
 
                     <img
                         src="https://i.ytimg.com/vi/7_2s4QeiXq0/maxresdefault.jpg"
-                        alt="Triton Charters" width="100%"
-                        style="border-radius: .3em; margin: 1em 0;"
-                        />
+                        alt="Triton Charters" />
 
                     <h2>Parking</h2>
                     <p>
@@ -233,16 +272,15 @@
 
                     <h2>Waiver</h2>
                     <p>
-                        RSVP must be made by November 9th (72 hours)
-                        before boat launch. The charter company requires
+                        RSVP must be made 72 hours before boat launch (November 9th).
+                        The charter company requires
                         your full name that is on your driver's license
                         or other form of identification and to sign the
                         waiver before boarding.
                     </p>
 
-                    <div class="alert alert-danger p-5 text-center">
-                        <strong><a href>Sign this waiver!</a></strong>
-                    </div>
+                    <i class="fa fa-solid fa-file-contract"></i>
+                    <strong><a href="https://waiver.smartwaiver.com/w/5f532214319be/web/?auto_tag=fh_id_139005514">Sign this waiver!</a></strong>
                 </div>
             </div>
 
@@ -253,19 +291,50 @@
                         alt="EPPIG Brewing" width="100" />
                 </div>
                 <div class="col content">
-                    <h1>After Party!</h1>
-                    <p class="datetime">1:00pm until ?</p>
-                    <p>After the boat ride you're welcome to join us over at
-                        <a
-                            href="http://www.eppigbrewing.com/waterfront-biergarten">Eppig
-                            Brewing</a> for a few beers. The brewery is a
-                        short walk from the pier.</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.624190381603!2d-117.22976728437078!3d32.72261258098844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80deaba3ae27cb6b%3A0xe4c4366d85c728d1!2sEppig%20Brewing%20Waterfront%20Biergarten!5e0!3m2!1sen!2sus!4v1663455671552!5m2!1sen!2sus"
-                        width="200" height="150" style="border: .1em solid
-                        #999;"
-                        allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="row">
+                        <div class="col">
+                            <h1>The After Party!</h1>
+                            <p class="datetime">1:00pm until 3:00pm</p>
+                        </div>
+                        <div class="col-4" style="padding: 1.5em 0;">
+                            <div class="atcb" style="display:none;">
+                                {
+                                    "name":"Birthday After Party",
+                                    "description": "After the boat ride you're welcome to join us over at Eppig Brewing for a few beers. The brewery is a short walk from the pier.",
+                                    "startDate":"2022-11-12",
+                                    "startTime":"13:00",
+                                    "endTime":"15:00",
+                                    "location":"Eppig Brewing Waterfront Biergarten, 2817 Dickens St, San Diego, CA 92106",
+                                    "label":"Add to Calendar",
+                                    "options":[
+                                    "Apple",
+                                    "Google",
+                                    "iCal",
+                                    "Microsoft365",
+                                    "MicrosoftTeams",
+                                    "Outlook.com",
+                                    "Yahoo"
+                                    ],
+                                    "timeZone":"America/Los_Angeles",
+                                    "trigger":"click",
+                                    "inline":true,
+                                    "listStyle":"modal",
+                                    "iCalFileName":"Reminder-Event",
+                                    "organizer":"Brian Blain|bblain7@gmail.com"
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        After the boat ride you're welcome to join us over at Eppig Brewing for a few beers. The brewery is a short walk from the pier.
+                    </p>
+                    <p>
+                        <i class="fa fa-solid fa-beer-mug-empty"></i>
+                        <a href="http://www.eppigbrewing.com/current-beers">Current Beer Menu</a>
+                    </p>
+
+                    <img src="https://images.squarespace-cdn.com/content/v1/555fb1afe4b004a8dfc0ce79/1624643999912-LNRRWM7IC8PQRPYF2L6C/_W2X1994.jpg" />
                 </div>
             </div>
         </div>
