@@ -1,0 +1,138 @@
+/*
+https://coolors.co/8ecae6-219ebc-023047-ffb703-fb8500
+            
+8ECAE6 Cornflower
+219EBC Blue Green            
+023047 Blue
+FFB703 Yellow
+FB8500 Orange 
+*/
+         
+
+body {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+}
+
+a:link {
+    color: #023047;
+}
+
+a:visited {
+    color: #023047;
+}
+
+a:hover {
+    color: #FB8500;
+}
+
+a:active {
+    color: #FB8500;
+}
+
+h1, h2 {
+    color: #023047;
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.hero {
+    background-image: url('./images/cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #FFB703;
+    background-position: bottom;
+
+    border-bottom: .2em solid #023047;
+    padding: 1em 2em;
+}
+
+.title {
+    color: #023047;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #023047;
+    font-weight: bold;
+    margin: -.6em 0;
+}
+
+.datetime {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.info {
+    color: #FFF;
+    background-color: #219EBC;
+    font-size: 1.5em;
+    padding: 1em 0;
+}
+
+.info .row {
+    padding: 1em;
+}
+
+.eppig {
+    background-color: #FFB703;
+}
+
+.eppig-logo {
+    background: linear-gradient(#219EBC, #219EBC) no-repeat center/1em 100%;
+    padding: 2em 0;
+    margin-top: -.1em;
+}
+
+.eppig-logo img {
+    border-radius: 50%;
+}
+
+.triton-logo {
+    background: linear-gradient(#219EBC, #219EBC) no-repeat center/1em 100%;
+    padding: 2em 0;
+    margin-top: -.1em;
+}
+
+.triton-logo img {
+    border-radius: 50%;
+}
+
+.triton .alert-danger {
+    font-size: 1.5em;
+}
+
+.content {
+    max-width: 35em;
+    padding: 1em 1em 4em 0;
+}
+
+.content img {
+    border-radius: .3em;
+    margin: 1em 0;
+    width: 100%;
+}
+
+.atcb-text {
+    font-size: 1.5em !important;
+    font-weight: normal;
+}
+
+.atcb-icon {
+    height: 1.5em;
+    width: 2em !important;
+}
+
+.atcb-list-item {
+    font-size: 2em !important;
+}
+
+.fa {
+    color: #023047;
+    padding-right: .5em;
+}
